@@ -47,7 +47,7 @@ class PokemonAdapter: RecyclerView.Adapter<PokemonAdapter.PokemonViewHolder>() {
             val itemPokemonName = findViewById<TextView>(R.id.item_pokemon_name)
             val itemPokemonImage = findViewById<ImageView>(R.id.item_pokemon_image)
             itemPokemonName.text = pokemon.name
-            Glide.with(this).load("https://pokeres.bastionbot.org/images/pokemon/${pokemon.number}.png")
+            Glide.with(this).load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.number}.png")
                 .centerCrop()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(itemPokemonImage)
@@ -55,3 +55,4 @@ class PokemonAdapter: RecyclerView.Adapter<PokemonAdapter.PokemonViewHolder>() {
     }
 
 }
+//https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.number}.png
