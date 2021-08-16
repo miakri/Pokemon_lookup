@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp">
+
     <ImageView
         android:id="@+id/item_pokemon_image"
         android:layout_width="96dp"
@@ -12,6 +13,11 @@
 
     <TextView
         android:id="@+id/item_pokemon_name"
+        android:fontFamily="@font/pokemon"
+        android:textFontWeight="400"
+        android:textSize="10sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
