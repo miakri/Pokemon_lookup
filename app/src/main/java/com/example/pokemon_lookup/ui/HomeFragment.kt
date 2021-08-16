@@ -13,7 +13,6 @@ import com.example.pokemon_lookup.R
 import com.example.pokemon_lookup.adapters.PokemonAdapter
 import com.example.pokemon_lookup.databinding.FragmentHomeBinding
 import com.example.pokemon_lookup.ui.viewmodels.PokemonViewModel
-import com.example.pokemon_lookup.utils.Constants.Companion.MAX_POKEMONS_LOADED
 import com.example.pokemon_lookup.utils.Resource
 
 
@@ -23,6 +22,8 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
     lateinit var pokemonAdapter: PokemonAdapter
     private lateinit var _binding: FragmentHomeBinding
     private val binding get() = _binding
+
+    val MAX_POKEMONS_LOADED = 20
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
