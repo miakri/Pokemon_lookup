@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Pokemon lookup</string>
+    <!--Content description-->
+    <string name="splash_animation">Welcome screen</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
