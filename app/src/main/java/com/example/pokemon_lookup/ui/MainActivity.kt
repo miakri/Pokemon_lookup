@@ -29,4 +29,6 @@ class MainActivity : AppCompatActivity() {
         val viewModelProviderFactory = PokemonViewModelProviderFactory(application, pokemonRepository)
         viewModel = ViewModelProvider(this, viewModelProviderFactory).get(PokemonViewModel::class.java)
     }
+
+
 }

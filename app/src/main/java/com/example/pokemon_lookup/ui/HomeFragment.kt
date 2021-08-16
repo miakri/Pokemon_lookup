@@ -12,11 +12,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.pokemon_lookup.R
 import com.example.pokemon_lookup.adapters.PokemonAdapter
 import com.example.pokemon_lookup.databinding.FragmentHomeBinding
-
-
 import com.example.pokemon_lookup.ui.viewmodels.PokemonViewModel
 import com.example.pokemon_lookup.utils.Constants.Companion.MAX_POKEMONS_LOADED
 import com.example.pokemon_lookup.utils.Resource
+
 
 class HomeFragment: Fragment(R.layout.fragment_home) {
 
@@ -112,5 +111,7 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
             }
         }
     }
+
+
 
 }
